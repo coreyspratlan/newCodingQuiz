@@ -4,29 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style rel="stylesheet" href="style.css"></style>
+    <link rel="stylesheet" href="style.css" />
     <title>newCodingQuiz</title>
 </head>
 
 <body>
-    <h1><b>It's a Mozart Quiz Y'ALL!!!</b></h1>
-    <br>
-    <h3>You have 3 minutes to complete the quiz! Click the START button to begin! </h3>
-    <p>⬇️</p>
-    <button id="start-button">START</button>
-    <h2><span id="timer">3:00</span></h2>
+
+    <div id="welcome-screen">
+        <h1><b>It's a Mozart Quiz Y'ALL!!!</b></h1>
+        <br>
+        <h3>You have 3 minutes to complete the quiz! Click the START button to begin! </h3>
+        <p>⬇️</p>
+        <button id="start-button">START</button>
+    </div>
+
     <div id="question-box" class="hide">
+        <h2><span id="timer">3:00</span></h2>
+        <br>
         <h3 id="question"></h3>
         <h3 id="choices"></h3>
         <form>
             <input type="radio" name="" id="a" value="a">
-            <label for="A">A.</label><br>
+            <label for="A" id="A">A.</label><br>
             <input type="radio" name="" id="b" value="b">
-            <label for="B">B.</label><br>
+            <label for="B" id="B">B.</label><br>
             <input type="radio" name="" id="c" value="c">
-            <label for="C">C.</label><br>
+            <label for="C" id="C">C.</label><br>
             <input type="radio" name="" id="d" value="d">
-            <label for="D">D..</label><br>
+            <label for="D" id="D">D..</label><br>
         </form>
         <br>
         <button id="submit-button">SUBMIT</button>
